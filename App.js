@@ -11,6 +11,8 @@ import {
   Text,
   View
 } from 'react-native';
+import Card from './components/card';
+
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -24,15 +26,9 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Sydney
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
+        <Card title = "Welcome to Card">
+          this is texts sitting inside a card.
+        </Card>
       </View>
     );
   }
